@@ -77,7 +77,10 @@ def list_emails(file_path) -> None:
     valid = []
     invalid = []
     with open(file_path, 'r') as f:  # Open for read only
-        emails = f.read().split('\n')  # Split by '\n' - new line
+        text = f.read()  # reading bytes of text to string.
+
+        # extracting all email-like patterns within the text
+        emails = re.findall('[\S]+@[\S]+', text)
         for email in emails:
             valid.append(email) if check_email(
                 email) else invalid.append(email)  # Shorten if - filling the lists

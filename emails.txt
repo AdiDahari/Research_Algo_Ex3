@@ -1,8 +1,8 @@
-abc-@mail.com
-abc..def@mail.com
-.abc@mail.com
-abc#def@mail.com
-abc.def@mail.c
+My email is : abc-@mail.com .
+Please contact by email abc..def@mail.com for more details.
+this is an invalid email address: .abc@mail.com .
+abc#def@mail.com is not a valid email address.
+abc.def@mail.c has invalid suffix
 abc.def@mail#archive.com
 abc.def@mail
 abc.def@mail..com
